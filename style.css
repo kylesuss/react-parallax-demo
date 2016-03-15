@@ -1,0 +1,9 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+}
