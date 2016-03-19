@@ -4,6 +4,59 @@ body, html {
 }
 
 #root {
-  margin-top: 100vh;
-  margin-bottom: 100vh;
+  margin-top: 150vh;
+  margin-bottom: 150vh;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.font-primary {
+  font-family: sans-serif;
+  font-size: 3em;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.animation {
+  height: 80vh;
+}
+
+.animation--background {
+  background: url('./image.jpeg');
+  background-size: 100%;
+  background-position: center center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin-top: -100px;
+  z-index: -1;
 }
