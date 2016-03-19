@@ -3,11 +3,6 @@ body, html {
   padding: 0;
 }
 
-#root {
-  margin-top: 150vh;
-  margin-bottom: 150vh;
-}
-
 .relative {
   position: relative;
 }
@@ -47,6 +42,8 @@ body, html {
 
 .animation {
   height: 80vh;
+  margin-top: 150vh;
+  margin-bottom: 150vh;
 }
 
 .animation--background {

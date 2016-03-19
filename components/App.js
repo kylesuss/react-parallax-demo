@@ -5,7 +5,10 @@ import listenToScroll from '../hocs/listenToScroll';
 class Application extends Component {
   render() {
     return (
-      <Animation scrollLevel={ this.props.scrollLevel } />
+      <div>
+        <Animation scrollLevel={ this.props.scrollLevel } />
+        <Animation scrollLevel={ this.props.scrollLevel } />
+      </div>
     );
   }
 }
