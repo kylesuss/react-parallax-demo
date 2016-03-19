@@ -1,10 +1,3 @@
-# react-webpack-template
+# React Parallax Example
 
-This is a simple template for building React apps. Use this to get started, and if you find yourself needing additional features, see my [webpack-howto](https://github.com/petehunt/webpack-howto).
-
-## How to use this
-
-  * Clone the repo: `git clone https://github.com/petehunt/react-webpack-template my-new-project`
-  * Install the dependencies: `cd my-new-project && npm install`
-  * Start webpack: `npm start`
-  * Add your code to `index.js` and open `index.html`
+A proof of concept for a parallax component that is isolated in the app and accepts the scroll position as a prop in order to build the parallax effect.
