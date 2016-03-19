@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import getScrollLevel from '../utils/getScrollLevel';
 
 const listenToScroll = (PassThroughComponent) => class extends Component {
   constructor(props) {
     super(props);
     this.boundHandleScroll = this.handleScroll.bind(this);
-    this.state = { scrollLevel: getScrollLevel() };
+    this.state = { scrollLevel: document.body.scrollTop };
   }
 
   componentDidMount() {
@@ -19,7 +18,7 @@ const listenToScroll = (PassThroughComponent) => class extends Component {
 
   handleScroll(event) {
     this.scrollStateCallback = requestAnimationFrame(() => {
-      this.setState({ scrollLevel: getScrollLevel() });
+      this.setState({ scrollLevel: document.body.scrollTop });
     });
   }
 
