@@ -37,7 +37,7 @@ export default class Animation extends Component {
     });
   }
 
-  getTranslateY(scrollLevel=this.props.scrollLevel) {
+  getTranslateY(scrollLevel) {
     const { offsetTop, offsetBottom } = this.state;
 
     if (this.isInViewport(scrollLevel)) {
