@@ -38,7 +38,7 @@ export default class Animation extends Component {
   }
 
   getTranslateY(scrollLevel) {
-    const { offsetTop, offsetBottom } = this.state;
+    const { offsetTop, offsetBottom, translateY } = this.state;
 
     if (this.isInViewport(scrollLevel)) {
       const scrolledPx = scrollLevel + window.innerHeight - offsetTop;
@@ -48,7 +48,7 @@ export default class Animation extends Component {
       return percentageScrolled * TOTAL_Y_TRANSLATE;
     }
 
-    return this.state.translateY;
+    return translateY;
   }
 
   isInViewport(scrollLevel) { // Will be nextProps.scrollLevel
